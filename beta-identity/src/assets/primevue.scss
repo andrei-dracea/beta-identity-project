@@ -1,0 +1,25 @@
+body {
+  --p-radiobutton-background: #{$grey};
+  --p-radiobutton-border-color: #{$grey};
+  --p-radiobutton-checked-background: #{$primary};
+
+  // --p-button-secondary-background: #{$grey};
+  // --p-button-secondary-border-color: #{$grey};
+}
+
+.p-toggleswitch {
+  &.is-primary {
+    --p-toggleswitch-checked-background: #{$primary};
+    --p-toggleswitch-checked-hover-background: #{$primary};
+  }
+
+  &.is-green {
+    --p-toggleswitch-checked-background: #{$green};
+    --p-toggleswitch-checked-hover-background: #{$green};
+  }
+
+  &.is-red {
+    --p-toggleswitch-checked-background: #{$red};
+    --p-toggleswitch-checked-hover-background: #{$red};
+  }
+}

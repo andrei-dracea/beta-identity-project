@@ -1,0 +1,29 @@
+{
+  "name": "beta-identity",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.0.7",
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
+    "bulma": "^0.9.4",
+    "leaflet": "^1.9.4",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.0.7",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "sass-embedded": "^1.78.0",
+    "vite": "^5.3.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

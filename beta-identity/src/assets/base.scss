@@ -1,0 +1,32 @@
+@import url('./primevue.scss');
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  font-optical-sizing: auto;
+
+  #app {
+    border: 1px solid $border;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1820px;
+
+    main {
+      flex: 1;
+    }
+  }
+}
+
+.label {
+  font-size: $size-2;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-weight: $weight-bold;
+}
