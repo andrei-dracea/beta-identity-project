@@ -1,7 +1,11 @@
 body {
+  --p-primary-color: #{$red};
   --p-radiobutton-background: #{$grey};
   --p-radiobutton-border-color: #{$grey};
   --p-radiobutton-checked-background: #{$primary};
+  --p-radiobutton-icon-checked-color: transparent;
+  --p-radiobutton-icon-checked-hover-color: transparent;
+  --p-radiobutton-checked-border-color: transparent;
 
   // --p-button-secondary-background: #{$grey};
   // --p-button-secondary-border-color: #{$grey};

@@ -1,53 +1,18 @@
-<script setup></script>
+<script setup>
+import Store from '@/store'
+import stories from '@/data/stories'
+</script>
 
 <template>
-  <div id="stories">
-    <div class="box">
-      <p>
-        Acum un an am fost urmărită în plină zi pe stradă de un dubios, in cea
-        mai ok zonă a orașului. M-am adăpostit într-un magazin, omul a coborât
-        după mine și l-au reținut scurt niște clienți cât să apuc eu să ies, să
-        mă depărtez. Am fost inspirată să mă ascund după o mașină 15 minute,
-        timp in care el mă căuta. Poliția mi-a spus că nu se pune ca urmărire și
-        m-au luat peste picior. Anul acesta a fost distribuită poza lui pe
-        insta, când omul a mai urmărit o fată de vârsta mea în aceleași
-        condiții, am acceptat să fiu chemată să dau declarație în favoarea ei
-        dar cazul s-a închis sub îndrumarea autorităților.
-      </p>
-
-      <p class="mt-4">Femeie cis, lesbiană, 21 ani</p>
-    </div>
-
-    <div class="box">
-      <p>
-        Acum un an am fost urmărită în plină zi pe stradă de un dubios, in cea
-        mai ok zonă a orașului. M-am adăpostit într-un magazin, omul a coborât
-        după mine și l-au reținut scurt niște clienți cât să apuc eu să ies, să
-        mă depărtez. Am fost inspirată să mă ascund după o mașină 15 minute,
-        timp in care el mă căuta. Poliția mi-a spus că nu se pune ca urmărire și
-        m-au luat peste picior. Anul acesta a fost distribuită poza lui pe
-        insta, când omul a mai urmărit o fată de vârsta mea în aceleași
-        condiții, am acceptat să fiu chemată să dau declarație în favoarea ei
-        dar cazul s-a închis sub îndrumarea autorităților.
-      </p>
-
-      <p class="mt-4">Femeie cis, lesbiană, 21 ani</p>
-    </div>
-
-    <div class="box">
-      <p>
-        Acum un an am fost urmărită în plină zi pe stradă de un dubios, in cea
-        mai ok zonă a orașului. M-am adăpostit într-un magazin, omul a coborât
-        după mine și l-au reținut scurt niște clienți cât să apuc eu să ies, să
-        mă depărtez. Am fost inspirată să mă ascund după o mașină 15 minute,
-        timp in care el mă căuta. Poliția mi-a spus că nu se pune ca urmărire și
-        m-au luat peste picior. Anul acesta a fost distribuită poza lui pe
-        insta, când omul a mai urmărit o fată de vârsta mea în aceleași
-        condiții, am acceptat să fiu chemată să dau declarație în favoarea ei
-        dar cazul s-a închis sub îndrumarea autorităților.
-      </p>
-
-      <p class="mt-4">Femeie cis, lesbiană, 21 ani</p>
+  <div id="stories" v-show="Store.filterModel.stories">
+    <div class="wrapper">
+      <div class="box has-text-weight-semibold">
+        {{ $t('stories_prompt') }}
+      </div>
+      <div class="box" v-for="(entry, index) in stories[$i18n.locale]">
+        <p>{{ entry.story }}</p>
+        <p class="mt-5" v-if="entry.author">{{ entry.author }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -60,13 +25,17 @@
   top: 0;
   bottom: 0;
   width: 300px;
-  overflow: auto;
-  padding: 0 10px 40px 0;
   font-weight: $weight-medium;
+
+  .wrapper {
+    height: 100%;
+    overflow: auto;
+    padding: 0 10px 40px 0;
+  }
 
   .box {
     border-radius: 20px;
-    padding: 30px 30px 60px;
+    padding: 30px 30px 50px;
     background: $primary;
     margin-top: 10px;
   }

@@ -2,10 +2,11 @@ import { reactive } from 'vue'
 
 export default {
   filterModel: reactive({
-    stories: false,
+    stories: true,
     safe: true,
-    unsafe: false,
+    unsafe: true,
     gender: 0,
+    age: 0,
     orientation: 0,
   }),
 }

@@ -2,6 +2,12 @@
 import Filters from './components/Filters.vue'
 import Map from './components/Map.vue'
 import Stories from './components/Stories.vue'
+
+import { useI18n } from 'vue-i18n'
+
+const i18n = useI18n()
+
+const locales = i18n.availableLocales.sort((a) => (a == 'ro' ? -1 : 0))
 </script>
 
 <template>
@@ -9,7 +15,22 @@ import Stories from './components/Stories.vue'
     <img src="@/assets/logo-app.svg" alt="logo app" />
     <img src="@/assets/logo.svg" alt="logo app" />
 
-    <a href="#">DESPRE PROIECT</a>
+    <p class="is-size-2 has-text-weight-bold is-uppercase">
+      <a
+        v-for="locale in locales"
+        :key="`locale-${locale}`"
+        @click.prevent="$i18n.locale = locale"
+        class="ml-3"
+        :class="{ 'has-text-grey-dark': $i18n.locale != locale }"
+      >
+        {{ locale }}
+      </a>
+
+      <a href="/" class="ml-7">
+        <span>{{ $t('about') }}</span>
+        <span class="pi pi-arrow-up-right is-size-2 ml-1"></span>
+      </a>
+    </p>
   </nav>
 
   <main>
