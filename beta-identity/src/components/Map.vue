@@ -8,7 +8,12 @@ import Store from '@/store'
 import 'leaflet/dist/leaflet.css'
 import mapBackground from '@/assets/harta_bg.svg'
 
-const imagePaths = Object.keys(import.meta.glob('@/assets/map_svg/*'))
+const imagePaths = Object.values(
+  import.meta.glob('@/assets/map_svg/*.svg', {
+    import: 'default',
+    eager: true,
+  })
+)
 
 var heatmap = null
 var images = {}
@@ -91,6 +96,7 @@ const draw = async (images) => {
 
 onMounted(async () => {
   Store.loading = true
+
   images = await preloadImages(imagePaths)
 
   mapInstance = map('map', mapOptions).fitBounds(bounds)
