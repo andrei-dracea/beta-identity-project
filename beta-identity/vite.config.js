@@ -17,6 +17,7 @@ export default defineConfig({
         additionalData: `
           @import "@/assets/variables.scss";
         `,
+        sassOptions: { quietDeps: true },
       },
     },
   },

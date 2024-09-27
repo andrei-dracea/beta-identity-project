@@ -1,5 +1,9 @@
+:root {
+  --p-primary-color: #{$primary} !important;
+  --p-primary-contrast-color: #{$black} !important;
+}
+
 body {
-  --p-primary-color: #{$red};
   --p-radiobutton-background: #{$grey};
   --p-radiobutton-border-color: #{$grey};
   --p-radiobutton-checked-background: #{$primary};
@@ -7,16 +11,17 @@ body {
   --p-radiobutton-icon-checked-hover-color: transparent;
   --p-radiobutton-checked-border-color: transparent;
 
-  // --p-button-secondary-background: #{$grey};
-  // --p-button-secondary-border-color: #{$grey};
+  --p-button-primary-hover-background: #{$primary};
+  --p-button-primary-hover-border-color: #{$primary};
+
+  --p-button-secondary-background: #{$white};
+  --p-button-secondary-border-color: #{$white};
+
+  --p-button-secondary-hover-background: #{$white};
+  --p-button-secondary-hover-border-color: #{$white};
 }
 
 .p-toggleswitch {
-  &.is-primary {
-    --p-toggleswitch-checked-background: #{$primary};
-    --p-toggleswitch-checked-hover-background: #{$primary};
-  }
-
   &.is-green {
     --p-toggleswitch-checked-background: #{$green};
     --p-toggleswitch-checked-hover-background: #{$green};
@@ -25,5 +30,17 @@ body {
   &.is-red {
     --p-toggleswitch-checked-background: #{$red};
     --p-toggleswitch-checked-hover-background: #{$red};
+  }
+}
+
+.p-button {
+  &.is-mobile {
+    height: 42px;
+    text-transform: uppercase;
+
+    .p-button-label {
+      font-size: $size-2;
+      font-weight: $weight-bold;
+    }
   }
 }

@@ -1,0 +1,35 @@
+<g clip-path="url(#a)">
+  <path fill="url(#b)"
+    d="M2652.08 1183.01c-13.32 11.38-15.37 22.24-24.62 41.07-25.8 52.51-62.05 74.22-57.43 80.09 3.61 4.6 27.87-6.14 47.18-20.53 22.52-16.8 23.89-27.83 57.43-69.82 25.09-31.42 36-39.86 32.82-45.18-4.59-7.7-35.03-3-55.38 14.37" />
+  <path fill="url(#c)"
+    d="M1304.32 1209.71c-18.44 14.72-19.91 50.41-6.15 63.66 9.05 8.72 18.71 1.95 41.03 14.37 11.15 6.2 13.41 10.5 22.56 12.32 12.96 2.59 24.2-2.87 30.77-6.16 17.58-8.81 45.74-31.56 41.02-51.34-3.83-16.09-27.42-21.7-65.64-30.8-33.99-8.09-50.97-12.13-63.59-2.05" />
+  <path fill="url(#d)"
+    d="M1330.25 1406.84c-17.06-1.12-37.35 36.78-40.51 71.88-1.01 11.13-3.92 43.7 16.2 59.55 1.77 1.4 11.74 9.24 24.31 8.21 12.52-1.02 14.89-9.79 30.38-16.43 17.03-7.31 21.09.33 36.45-6.16 15.78-6.67 31.98-23.34 30.38-39.01-.59-5.79-5.78-12.08-16.2-24.64-9.89-11.96-14.83-17.91-22.28-22.59-13.8-8.67-19.08-3.82-34.42-12.32-16.47-9.14-16.2-17.95-24.31-18.49" />
+  <path fill="url(#e)"
+    d="M2502.33 1406.85c-4.31 5.15-26.54 33-20.51 63.65 3.34 17.03 11.79 16.45 20.51 43.13 7.67 23.45 4.64 34.58 14.36 41.07 3.69 2.46 7.24 2.93 32.82 0 36.17-4.15 38.34-6.12 53.33-6.16 19.9-.06 21.97 3.39 28.72 0 16.31-8.2 25.75-39.14 16.41-61.61-11.67-28.05-46.6-28.48-49.23-53.39-1-9.65 3.96-12.28 2.05-24.64-1.84-12.01-9.12-26.33-20.51-32.86-23.65-13.55-60.02 9.33-77.95 30.81" />
+</g>
+<defs>
+  <radialGradient id="b" cx="0" cy="0" r="1"
+    gradientTransform="scale(69.1873 70.0932)rotate(90 10.26 27.88)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="c" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 48.5015 -72.5397 0 1361.54 1252.24)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="d" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 69.8774 -69.29 0 1358.28 1476.7)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="e" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 92.3764 -85.4367 0 2566.23 1464.35)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <clipPath id="a">
+    <path fill="#fff" d="M1289 837h1440v998H1289z" />
+  </clipPath>
+</defs>

@@ -1,29 +1,53 @@
 <script setup>
 import Store from '@/store'
 import filters from '@/data/filters'
+
+const reset = () => {
+  Object.assign(Store.filterModel, {
+    safe: true,
+    unsafe: true,
+    gender: 0,
+    age: 0,
+    orientation: 0,
+  })
+}
 </script>
 
 <template>
-  <aside id="filters">
+  <aside id="filters" v-show="Store.filters">
     <div class="wrapper">
-      <div class="filter-container">
+      <div
+        class="filter-container is-flex is-align-items-center is-hidden-desktop mb-5"
+      >
+        <p
+          class="has-text-weight-bold is-uppercase mr-auto"
+          v-text="$t('filters.title')"
+        />
+
+        <Button
+          type="button"
+          icon="pi pi-times"
+          severity="secondary"
+          size="large"
+          text
+          @click="Store.filters = false"
+        />
+      </div>
+      <div class="filter-container is-hidden-touch">
         <label class="label">
           <span v-text="$t('filters.stories')" />
-          <ToggleSwitch
-            class="is-primary"
-            v-model="Store.filterModel.stories"
-          />
+          <ToggleSwitch class="is-primary" v-model="Store.stories" />
         </label>
       </div>
       <div class="filter-container">
         <label class="label">
-          <span>percepție de siguranță</span>
+          <span v-text="$t('filters.safe')" />
           <ToggleSwitch class="is-green" v-model="Store.filterModel.safe" />
         </label>
       </div>
       <div class="filter-container">
         <label class="label">
-          <span>percepție de nesiguranță</span>
+          <span v-text="$t('filters.unsafe')" />
           <ToggleSwitch class="is-red" v-model="Store.filterModel.unsafe" />
         </label>
       </div>
@@ -45,6 +69,7 @@ import filters from '@/data/filters'
         </div>
       </div>
     </div>
+
     <footer class="filter-container has-text-right">
       <Button
         type="button"
@@ -52,6 +77,7 @@ import filters from '@/data/filters'
         icon="pi pi-times"
         severity="secondary"
         text
+        @click="reset"
       />
     </footer>
   </aside>
@@ -59,17 +85,18 @@ import filters from '@/data/filters'
 
 <style lang="scss" scoped>
 #filters {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  @extend %overlay;
   z-index: 999;
   background: $white;
   border-right: 1px solid $border;
-  width: 280px;
   flex: none;
   display: flex;
   flex-direction: column;
+
+  @include desktop {
+    width: 280px;
+    right: auto;
+  }
 
   .wrapper {
     overflow: auto;
@@ -79,6 +106,14 @@ import filters from '@/data/filters'
   .filter-container {
     padding: 16px 20px;
 
+    &:not(:last-child) {
+      border-bottom: 1px solid $border;
+    }
+
+    &:last-child:not(:first-child) {
+      border-top: 1px solid $border;
+    }
+
     .checkbox {
       display: flex;
       align-items: center;
@@ -87,10 +122,6 @@ import filters from '@/data/filters'
       span {
         margin-left: 10px;
       }
-    }
-
-    &:not(:first-child) {
-      border-top: 1px solid $border;
     }
   }
 }

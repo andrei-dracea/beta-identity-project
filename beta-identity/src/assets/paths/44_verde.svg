@@ -1,0 +1,9 @@
+<path fill="url(#a)"
+  d="M1918.74 1635.81c-21.17 3-31.75 4.48-36.92 8.22-7.45 5.35-17.68 17.45-14.36 28.74 4.14 14.03 26.05 16.21 28.72 16.43 10.56.93 18.36-2.61 30.77-8.21 10.36-4.68 16.35-7.5 20.51-14.38.47-.78 7.94-13.53 2.05-22.58-3.81-5.88-11.34-7.27-16.41-8.22-6.03-1.11-10.79-.51-14.36 0" />
+<defs>
+  <radialGradient id="a" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 27.0825 -42.4736 0 1909.29 1662.27)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+</defs>

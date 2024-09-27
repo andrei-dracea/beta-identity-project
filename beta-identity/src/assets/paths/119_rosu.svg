@@ -1,0 +1,30 @@
+<path fill="url(#a)"
+  d="M1414.56 907.948c25.7-20.35 35.84 10.637 31.02 32.528-2.06 9.61-8.78 18.009-14.59 25.935-6.81 9.179-14.38 17.968-24.31 23.41-8.53 4.62-18.62 8.502-27.79 4.374-11.82-6.468-11.96-20.74-6.96-32.343 4.62-11.52 13.32-21.664 21.17-31.233 6.46-7.413 13.66-16.326 21.13-22.404l.31-.246z" />
+<path fill="url(#b)"
+  d="M1753.98 1070.46c18.47-3.43 27.51-.18 39.04 14.71 13.07 14.92 13.87 33.67 5 50.78-12.1 19.24-42.19 31.44-63.73 22.89-9.6-3.44-14.54-13.65-17.89-22.73-5.58-15.83-1.99-31.09 7.29-44.72 5.9-11.58 17.62-18.05 29.88-20.85l.39-.08z" />
+<path fill="url(#c)"
+  d="M1888.94 1153.73c11.46 3.55 17.58 15.63 19.44 26.98 2.01 13.09-2.11 26.7-8.88 37.6-8.08 13.39-25.19 17.03-39.4 12.59-12.6-3.9-21.4-17.78-20.89-30.86.95-14.42 7.35-29.94 18.96-38.98 8.31-5.81 20.18-10.53 30.4-7.45l.35.12z" />
+<path fill="url(#d)"
+  d="M2243.56 1081.92c16.72 20.7 7.66 43.99-20.24 43.95-11.04 0-21.66-8.05-22.69-19.1-.41-8.71 5.66-15.96 12.25-21.71 8.39-8.29 21.62-12.61 30.4-3.45l.28.29z" />
+<defs>
+  <radialGradient id="a" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 47.3127 -38.9618 0 1407.78 948.631)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="b" cx="0" cy="0" r="1"
+    gradientTransform="scale(45.07 46.2014)rotate(90 7.44 31.583)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="c" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 40.03 -34.8506 0 1874.04 1192.67)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="d" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 24.6926 -25.6683 0 2226.28 1101.17)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+</defs>

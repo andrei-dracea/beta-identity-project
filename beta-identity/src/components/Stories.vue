@@ -4,7 +4,7 @@ import stories from '@/data/stories'
 </script>
 
 <template>
-  <div id="stories" v-show="Store.filterModel.stories">
+  <div id="stories" v-show="Store.stories">
     <div class="wrapper">
       <div class="box has-text-weight-semibold">
         {{ $t('stories_prompt') }}
@@ -22,10 +22,16 @@ import stories from '@/data/stories'
   z-index: 999;
   position: absolute;
   right: 0;
-  top: 0;
+  left: 10px;
+  top: 42px;
   bottom: 0;
-  width: 300px;
   font-weight: $weight-medium;
+
+  @include desktop {
+    width: 300px;
+    top: 0;
+    left: auto;
+  }
 
   .wrapper {
     height: 100%;

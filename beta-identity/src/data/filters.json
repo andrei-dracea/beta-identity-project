@@ -1,0 +1,93 @@
+{
+  "ro": [
+    {
+      "label": "Identitate de gen",
+      "key": "gender",
+      "values": [
+        "Toate",
+        "Femeie cis (35%)",
+        "Bărbat cis (13%)",
+        "Femeie trans (3%)",
+        "Bărbat trans (5%)",
+        "Persoană non-binară (13%)",
+        "Persoană agender (3%)",
+        "Nespecificat (27%)"
+      ]
+    },
+    {
+      "label": "Orientare sexuală",
+      "key": "orientation",
+      "values": [
+        "Toate",
+        "Lesbiană (14%)",
+        "Gay (11%)",
+        "Bisexual/ă (20%)",
+        "Pansexual/ă (11%)",
+        "Asexual/ă (0.7%)",
+        "Heterosexual/ă (10%)",
+        "Queer (4%)",
+        "Nespecificat (29%)"
+      ]
+    },
+
+    {
+      "label": "Vârstă",
+      "key": "age",
+      "values": [
+        "Toate",
+        "Sub 18 (10%)",
+        "18-24 (47%)",
+        "25-34 (11%)",
+        "35-44 (4%)",
+        "45-54 (0.7%)",
+        "55-64 (1.3%)",
+        "Nespecificat (25%)"
+      ]
+    }
+  ],
+  "en": [
+    {
+      "label": "Gender",
+      "key": "gender",
+      "values": [
+        "All",
+        "Cis woman (35%)",
+        "Cis man (13%)",
+        "Trans woman (3%)",
+        "Trans man (5%)",
+        "Non-binary (13%)",
+        "Agender (3%)",
+        "Unspecified (27%)"
+      ]
+    },
+    {
+      "label": "Sexual Orientation",
+      "key": "orientation",
+      "values": [
+        "All",
+        "Lesbian (14%)",
+        "Gay (11%)",
+        "Bisexual (20%)",
+        "Pansexual (11%)",
+        "Asexual (0.7%)",
+        "Heterosexual (10%)",
+        "Queer (4%)",
+        "Unspecified (29%)"
+      ]
+    },
+    {
+      "label": "Age Range",
+      "key": "age",
+      "values": [
+        "All",
+        "Under 18 (10%)",
+        "18-24 (47%)",
+        "25-34 (11%)",
+        "35-44 (4%)",
+        "45-54 (0.7%)",
+        "55-64 (1.3%)",
+        "Unspecified (25%)"
+      ]
+    }
+  ]
+}

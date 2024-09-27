@@ -1,0 +1,16 @@
+<path fill="url(#a)"
+  d="M1332.08 1475.64c-1.32 1.56-18.89 23.12-12.31 49.28 7.38 29.35 40.39 45.38 67.69 43.13 26.71-2.22 42.81-21.48 47.18-26.7 4.97-5.93 28.92-36.41 16.41-61.6-11.69-23.56-46.23-24.34-59.49-24.65-13.64-.3-41.39-.94-59.48 20.54" />
+<path fill="url(#b)"
+  d="M1670.54 1518.76c-9.35 15.11-2.52 33.7-2.05 34.91 10.3 26.78 45.48 30.47 49.23 30.8 7.1.64 26.67 2.4 36.92-10.27 5.89-7.27 6.07-16.03 6.16-20.53.18-9.47-2.79-15.61-18.47-43.12-13.66-23.99-15.05-25.78-18.46-26.7-9.1-2.48-20.43 6.55-43.07 24.64-5.99 4.79-8.23 6.98-10.26 10.27" />
+<defs>
+  <radialGradient id="a" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 56.6201 -68.1642 0 1386.46 1511.64)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="b" cx="0" cy="0" r="1"
+    gradientTransform="scale(47.5815 50.7429)rotate(90 2.886 33.12)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F95C65" stop-opacity=".3" />
+    <stop offset="1" stop-color="#F95C65" stop-opacity="0" />
+  </radialGradient>
+</defs>

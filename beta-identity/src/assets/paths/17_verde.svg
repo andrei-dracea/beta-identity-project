@@ -1,0 +1,16 @@
+<path fill="url(#a)"
+  d="M1745.41 1575.23c5.27-1.31 9.4-11.62 6.15-18.48-3.52-7.47-15.98-11.23-26.66-4.11 6.23 15.18 14.79 24.01 20.51 22.59" />
+<path fill="url(#b)"
+  d="M1899.26 1667.64c1.86-5.59 14.46-10.39 22.56-4.11 8.99 6.96 5.42 22.08 0 24.64-7.3 3.48-25.29-12.4-22.56-20.53" />
+<defs>
+  <radialGradient id="a" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 13.2698 -13.9071 0 1738.8 1562.11)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="b" cx="0" cy="0" r="1"
+    gradientTransform="scale(14.1619 14.05)rotate(90 7.95 127.14)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+</defs>

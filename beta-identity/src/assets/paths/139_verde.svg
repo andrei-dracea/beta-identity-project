@@ -1,0 +1,37 @@
+<path fill="url(#a)"
+  d="M1804.9 1156.32c-10.2 3.82-16.72 12.18-16.41 20.53.18 5.47 3.22 9.24 4.1 10.27 5.66 6.59 16.39 8.63 24.61 4.11 6.16-3.39 11.27-10.66 10.26-18.48-1.19-9.37-10.83-17.21-22.56-16.43" />
+<path fill="url(#b)"
+  d="M1927.97 1193.28c-3.56 5.24-3.22 12.2 0 16.43 6.2 8.15 22.96 6.06 26.67-2.05 3.16-6.9-2.81-18.94-12.31-20.54-5.04-.86-10.99 1.23-14.36 6.16" />
+<path fill="url(#c)"
+  d="M1630.54 1308.28c3.75 2.24 8.74 1.91 12.31 0 10.15-5.44 12.04-25.42 4.1-30.8-4.97-3.37-13.7-.99-18.46 4.1-7.24 7.77-5.56 22.18 2.05 26.7" />
+<path fill="url(#d)"
+  d="M1969 1246.67c-10.34 10.7-7.06 30.62 4.1 41.07 12.5 11.67 34.49 11.15 43.08 0 9.89-12.81.47-37.62-16.41-45.17-9.01-4.03-22.65-4.3-30.77 4.1" />
+<path fill="url(#e)"
+  d="M2461.31 1209.71c-10.69 8.44-13.99 28.32-2.05 39.02 11.2 10.02 29.72 6.55 36.92-4.11 9.05-13.39-1.68-35.22-16.41-39.02-9.78-2.52-18.05 3.78-18.46 4.11" />
+<defs>
+  <radialGradient id="a" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 18.6943 -19.5559 0 1808.03 1174.96)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="b" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 13.9739 -15.033 0 1940.46 1200.91)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="c" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 16.9634 -14.0054 0 1637.86 1292.87)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="d" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 28.2262 -28.7246 0 1991.48 1268.07)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+  <radialGradient id="e" cx="0" cy="0" r="1"
+    gradientTransform="matrix(0 24.8379 -23.9118 0 2475.59 1229.85)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38D175" stop-opacity=".3" />
+    <stop offset="1" stop-color="#38D175" stop-opacity="0" />
+  </radialGradient>
+</defs>

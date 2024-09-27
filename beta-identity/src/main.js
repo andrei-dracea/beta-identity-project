@@ -6,13 +6,14 @@ import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 
 import Button from 'primevue/button'
+import ButtonGroup from 'primevue/buttongroup'
 import Checkbox from 'primevue/checkbox'
 import RadioButton from 'primevue/radiobutton'
 import ToggleSwitch from 'primevue/toggleswitch'
 
 import App from './App.vue'
-import './assets/base.scss'
 import 'primeicons/primeicons.css'
+import './assets/base.scss'
 
 const app = createApp(App)
 
