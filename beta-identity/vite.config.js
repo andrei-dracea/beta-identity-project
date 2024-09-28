@@ -23,5 +23,18 @@ export default defineConfig({
   },
   build: {
     assetsInlineLimit: 0,
+
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.svg')) {
+            // For SVG files, remove the hash and only use the name
+            return 'assets/[name][extname]'
+          }
+          // Default behavior for other assets
+          return 'assets/[name]-[hash][extname]'
+        },
+      },
+    },
   },
 })

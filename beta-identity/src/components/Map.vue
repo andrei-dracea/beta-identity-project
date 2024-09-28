@@ -44,6 +44,7 @@ const preloadImages = async (paths) => {
       const filename = url.split('/').pop()
 
       images[filename] = img
+      // console.log(filename)
 
       img.src = url
       img.onload = () => resolve(img)
