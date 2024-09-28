@@ -31,6 +31,7 @@ export default defineConfig({
             // For SVG files, remove the hash and only use the name
             return 'assets/[name][extname]'
           }
+
           // Default behavior for other assets
           return 'assets/[name]-[hash][extname]'
         },
