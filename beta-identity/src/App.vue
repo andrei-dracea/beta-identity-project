@@ -50,7 +50,7 @@ const hasFilters = computed(() => {
         {{ locale }}
       </a>
 
-      <a :href="$t('about_link')" class="ml-7">
+      <a :href="$t('about_link')" target="_blank" class="ml-7">
         <span>{{ $t('about') }}</span>
         <span class="pi pi-arrow-up-right is-size-2 ml-1"></span>
       </a>

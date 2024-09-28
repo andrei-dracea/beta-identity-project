@@ -15,24 +15,25 @@ const reset = () => {
 
 <template>
   <aside id="filters" v-show="Store.filters">
-    <div class="wrapper">
-      <div
-        class="filter-container is-flex is-align-items-center is-hidden-desktop mb-5"
-      >
-        <p
-          class="has-text-weight-bold is-uppercase mr-auto"
-          v-text="$t('filters.title')"
-        />
+    <div
+      class="filter-container is-flex is-align-items-center is-hidden-desktop"
+    >
+      <p
+        class="has-text-weight-bold is-uppercase mr-auto"
+        v-text="$t('filters.title')"
+      />
 
-        <Button
-          type="button"
-          icon="pi pi-times"
-          severity="secondary"
-          size="large"
-          text
-          @click="Store.filters = false"
-        />
-      </div>
+      <Button
+        type="button"
+        icon="pi pi-times"
+        severity="secondary"
+        size="large"
+        text
+        @click="Store.filters = false"
+      />
+    </div>
+
+    <div class="wrapper">
       <div class="filter-container is-hidden-touch">
         <label class="label">
           <span v-text="$t('filters.stories')" />

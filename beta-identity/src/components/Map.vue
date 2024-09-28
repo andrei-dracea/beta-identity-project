@@ -6,7 +6,7 @@ import mapData from '@/data/map_data.json'
 import Store from '@/store'
 
 import 'leaflet/dist/leaflet.css'
-import mapBackground from '@/assets/harta_bg.svg'
+import mapBackgroundPath from '@/assets/harta_bg.svg'
 
 const imagePaths = Object.values(
   import.meta.glob('@/assets/map_svg/*.svg', {
@@ -15,18 +15,24 @@ const imagePaths = Object.values(
   })
 )
 
+const mapBackground = new Image()
 var heatmap = null
 var images = {}
 
+const overlaySize = {
+  width: 1080,
+  height: 720,
+}
+
 const bounds = [
   [0, 0],
-  [720, 1080],
+  [overlaySize.height, overlaySize.width],
 ]
 
 const mapOptions = {
   crs: CRS.Simple,
   minZoom: 0,
-  maxZoom: 2,
+  maxZoom: 1.5,
   zoomDelta: 0.25,
   zoomSnap: 0.25,
   maxBounds: bounds,
@@ -44,12 +50,18 @@ const preloadImages = async (paths) => {
       const filename = url.split('/').pop()
 
       images[filename] = img
-      // console.log(filename)
 
       img.src = url
       img.onload = () => resolve(img)
       img.onerror = () => reject(new Error(`Failed to load image: ${url}`))
     })
+  })
+
+  await new Promise((resolve, reject) => {
+    mapBackground.src = mapBackgroundPath
+    mapBackground.onload = () => resolve(mapBackground)
+    mapBackground.onerror = () =>
+      reject(new Error(`Failed to load image: ${url}`))
   })
 
   await Promise.all(imagePromises)
@@ -58,12 +70,12 @@ const preloadImages = async (paths) => {
 
 const combineImages = (images) => {
   const canvas = document.createElement('canvas')
+  const size = mapInstance.getSize()
+  const height = size.y * 3
+  const width = height * 1.5
 
-  const width = bounds[1][1] * 2
-  const height = bounds[1][0] * 2
-
-  canvas.width = width
   canvas.height = height
+  canvas.width = width
 
   const ctx = canvas.getContext('2d')
   ctx.globalCompositeOperation = 'lighten'
@@ -72,6 +84,9 @@ const combineImages = (images) => {
   images.forEach((image) => {
     ctx.drawImage(image, 0, 0, width, height)
   })
+
+  ctx.globalCompositeOperation = 'multiply'
+  ctx.drawImage(mapBackground, 0, 0, width, height)
 
   return new Promise((resolve) => {
     canvas.toBlob((blob) => {
@@ -99,9 +114,7 @@ onMounted(async () => {
   Store.loading = true
 
   images = await preloadImages(imagePaths)
-
   mapInstance = map('map', mapOptions).fitBounds(bounds)
-  imageOverlay(mapBackground, bounds).addTo(mapInstance)
 
   draw(Object.values(images))
 })
@@ -110,6 +123,7 @@ watch(
   () => Store.filterModel,
   (value) => {
     const filteredImages = []
+    Store.loading = true
 
     mapData.forEach((e) => {
       if (value.gender && value.gender != e.gender) return
@@ -189,7 +203,8 @@ watch(
       background: $grey;
       font-weight: $weight-normal;
       font-size: 28px;
-      line-height: 36px;
+
+      line-height: 1.25;
       text-indent: 0;
     }
   }
